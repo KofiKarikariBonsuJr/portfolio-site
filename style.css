@@ -409,3 +409,30 @@ footer p {
     padding: 120px 6%;
   }
 }
+
+.rainbow-text {
+  background: linear-gradient(
+    90deg,
+    #ff2bd6,
+    #ffe600,
+    #00ffd5,
+    #3f7cff,
+    #b45cff,
+    #ff2bd6
+  );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbowMove 4s linear infinite;
+}
+
+@keyframes rainbowMove {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 300%;
+  }
+}
